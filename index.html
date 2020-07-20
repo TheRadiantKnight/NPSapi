@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        
+
+        <form id="form">
+           <h1 style="text-align: center;">Search National Parks</h1>
+            <div class="form-group"> 
+                <input type="text" id="parkname" placeholder="Name of a national park..." class="form-control ml-4" required>
+                <input type="text" id="select" value= "10" class="form-control ml-4 mt-2 mb-4">
+ 
+                
+            </div>
+            <div class="form-group">                              
+                               
+                <button class="btn btn-danger ml-4"> Search</button> 
+            </div>
+        
+        </form>
+
+       
+        <section id="results" class="hidden ml-4">
+          <h2>List of Parks</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
