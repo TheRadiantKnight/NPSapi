@@ -30,7 +30,7 @@ function displayParks(responseJson) {
 function searchParks(query, maxResults=10) {
     const params = {
         api_key: apiKey, 
-        q: query,
+        stateCode: query,
         limit: maxResults,
     };
 
@@ -54,13 +54,13 @@ function watchForm() {
         event.preventDefault();
         const parkName = $('#parkname').val();
         const maxResults = $('#select').val(); 
+
         if(maxResults <= 10) {
-            return searchParks(parkName, maxResults);
+           return searchParks(parkName, maxResults);
         } else {
-            return searchParks(parkName, 10);
-        }
-           
-        //searchParks(parkName, maxResults);
+           return searchParks(parkName, 10);
+        }          
+      
     });
 }
 
